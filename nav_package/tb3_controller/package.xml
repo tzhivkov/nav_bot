@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tb3_controller</name>
+  <version>0.0.1</version>
+  <description>
+    Implements control code and goal-choosing/seeking behavior
+  </description>
+
+  <maintainer email="sgtzhiv@gmail.com">Tsvetan Zhivkov</maintainer>
+  <author email="sgtzhiv@gmail.com">Tsvetan Zhivkov</author>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>move_base</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>turtlebot3_bringup</build_depend>
+  <build_depend>turtlebot3_navigation</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+
+
+  <exec_depend>gazebo</exec_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>move_base</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>turtlebot3_bringup</exec_depend>
+  <exec_depend>turtlebot3_navigation</exec_depend>
+  <exec_depend>turtlebot3_description</exec_depend>
+  <exec_depend>smach</exec_depend>
+  <exec_depend>smach_ros</exec_depend>
+  <exec_depend>smach_viewer</exec_depend>
+  <exec_depend>smach_msgs</exec_depend>
+
+
+  <export>
+  </export>
+</package>
