@@ -57,6 +57,4 @@
 
   <node name='smach_view' pkg='smach_viewer' type='smach_viewer.py'/>
 
-  <node name='smach_fsm' pkg='nav_bot' type='fsm_action.py'/>
-
 </launch>
