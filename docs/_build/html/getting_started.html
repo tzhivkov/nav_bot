@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started &mdash; nav_bot  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+      <script>
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="nav_bot package" href="nav_bot.html" />
+    <link rel="prev" title="Overview of nav_bot package" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> nav_bot
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#software-versions">Software Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-package">Installing Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-nav-bot">Running nav_bot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nav_bot.html">Code contents</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">nav_bot</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="getting-started">
+<span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Here you will learn what is required to run the package successfully and in what order things should be started, including the intended software version and OS of the package.</p>
+<div class="section" id="software-versions">
+<h2>Software Versions<a class="headerlink" href="#software-versions" title="Permalink to this headline">¶</a></h2>
+<p>This project was run on Ubuntu 20.04 and ROS melodic.
+The python version is 2.7.17.</p>
+</div>
+<div class="section" id="installing-package">
+<h2>Installing Package<a class="headerlink" href="#installing-package" title="Permalink to this headline">¶</a></h2>
+<p>Only ROS-specific and stanard python libraries are used. Therefore installing the package only requires the user to create a catkin_workspace and install using catkin. Follow the instructions on the ROS wiki to create a workspace &lt;<a class="reference external" href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">http://wiki.ros.org/catkin/Tutorials/create_a_workspace</a>&gt;.</p>
+<p>Go to the workspace directory and use the below commands.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ catkin_make
+$ catkin_make install
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-nav-bot">
+<h2>Running nav_bot<a class="headerlink" href="#running-nav-bot" title="Permalink to this headline">¶</a></h2>
+<p>Three commands need to be executed in three separate terminals. In the future these will be consolidated into a single execution script. Make sure the package is installed first, with the above commands.</p>
+<p>The first script is <code class="docutils literal"><span class="pre">fsm_action.py</span></code> followed by <code class="docutils literal"><span class="pre">start_experiment.py</span></code>.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">fsm_action.py</span></code> is located in /nav_package/tb3_controller/scripts/</li>
+<li>To run <code class="docutils literal"><span class="pre">fsm_action.py</span></code> do the following.</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ python fsm_action.py
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">start_experiment.py</span></code> is located in /scripts/</li>
+<li>To run <code class="docutils literal"><span class="pre">start_experiment.py</span></code> do the following.</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ python start_experiment.py
+</pre></div>
+</div>
+<p>Finally, run the ROS launcher with the folllowing.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ roslaunch nav_bot tb3_navigation.launch
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="overview.html" class="btn btn-neutral float-left" title="Overview of nav_bot package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="nav_bot.html" class="btn btn-neutral float-right" title="nav_bot package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, tzhivkov.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

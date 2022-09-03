@@ -18,7 +18,8 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('/home/tsvetan/catkin_workspace/src/nav_bot/nav_package/nav_bot/'))
+sys.path.insert(0, os.path.abspath(
+    '/home/tsvetan/catkin_workspace/src/nav_bot/nav_package/nav_bot/'))
 
 
 # -- General configuration ------------------------------------------------
@@ -163,6 +164,3 @@ texinfo_documents = [
      author, 'nav_bot', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-

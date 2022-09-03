@@ -119,6 +119,9 @@ class GotoGoal(smach.State):
 
     def callback_x(self, data):
         ''' Rostopic callback recording the x-value of the user defined goal
+
+            :param callback: Handles ROS callback method
+            :type callback: function, optional
         '''
         self.x = float(data.data)
         rospy.loginfo('{0} user input: {1}'.format(
@@ -126,6 +129,9 @@ class GotoGoal(smach.State):
 
     def callback_y(self, data):
         ''' Rostopic callback recording the y-value of the user defined goal
+
+            :param callback: Handles ROS callback method
+            :type callback: function, optional
         '''
         self.y = float(data.data)
         rospy.loginfo('{0} user input: {1}'.format(
@@ -190,6 +196,9 @@ class Idle(smach.State):
 
     def callback(self, data):
         ''' Rostopic callback recording user input and storing in self.instruct
+
+            :param callback: Handles ROS callback method
+            :type callback: function, optional
         '''
         self.intstruct = str(data.data)
         rospy.loginfo('{0} user input: {1}'.format(

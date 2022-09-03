@@ -7,11 +7,13 @@ Welcome to nav_bot's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
-   modules
-   nav_bot
+   Overview <overview>
+   Getting Started <getting_started>
+   Code contents <nav_bot>
+
 
 Indices and tables
 ==================
