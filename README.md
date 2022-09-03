@@ -4,7 +4,7 @@
 Fun control code that can be used to drive a common robot, e.g. Turtlebot3 (specifically the burger), to an exact location from anywhere on a given map. A home function drives the robot back to the starting location.
 
 ## docs
-Docs were generated using sphinx. To view the documation on a web browser go to docs/_build/html/ and open index.html.
+Docs were generated using sphinx. To view the documation on a web browser go to docs/_build/html/ and open index.html in your favourite browser.
 
 ## Code in nav_package/nav_bot and nav_package/tb3_controller and scripts
 For full description please open index.html as mentioned above.
