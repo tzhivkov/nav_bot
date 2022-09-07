@@ -7,7 +7,7 @@ Fun control code that can be used to drive a common robot, e.g. Turtlebot3 (spec
 Docs were generated using sphinx. To view the documation on a web browser go to docs/_build/html/ and open index.html in your favourite browser.
 
 ## Code in nav_package/nav_bot and nav_package/tb3_controller and scripts
-For full description please open index.html as mentioned above.
+For full description please open index.html as mentioned above. If viewing directly on GITHUB please accept my apologies and view [here](https://htmlpreview.github.io/?https://github.com/tzhivkov/nav_bot/blob/main/docs/_build/html/index.html).
 
 ## To run the project
 Open 3 separate terminals. 
