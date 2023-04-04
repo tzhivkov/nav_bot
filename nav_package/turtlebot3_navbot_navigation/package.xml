@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>turtlebot3_navbot_navigation</name>
+  <version>1.2.6</version>
+  <description>
+    A copy of turtlebot3_navigation package from the original turtlebot3 repo. It has been modified for this homebrew project. Please visit the original repo for contact detail of original developers. The repo can be found here <url type="website">http://wiki.ros.org/turtlebot3_navigation</url>.
+  </description>
+  <license>Apache 2.0</license>
+  <author email="tzhivkov@lincoln.ac.uk">TZhivkov</author>
+  <maintainer email="tzhivkov@lincoln.ac.uk">TZhivkov</maintainer>
+  <url type="emanual">http://turtlebot3.robotis.com</url>
+  <url type="repository">https://github.com/ROBOTIS-GIT/turtlebot3</url>
+  <url type="bugtracker">https://github.com/ROBOTIS-GIT/turtlebot3/issues</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>amcl</exec_depend>
+  <exec_depend>map_server</exec_depend>
+  <exec_depend>move_base</exec_depend>
+  <exec_depend>turtlebot3_bringup</exec_depend>
+</package>

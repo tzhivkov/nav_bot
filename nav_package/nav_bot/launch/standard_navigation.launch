@@ -52,9 +52,8 @@
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 
     <node pkg="rviz" type="rviz" name="rviz" required="true"
-          args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navigation.rviz"/>
+          args="-d $(find turtlebot3_navbot_navigation)/rviz/navbot_navigation.rviz"/>
   </group>
 
-  <node name='smach_view' pkg='smach_viewer' type='smach_viewer.py'/>
 
 </launch>

@@ -44,7 +44,7 @@
   </include>
 
   <!-- move_base -->
-  <include file="$(find turtlebot3_navbot_navigation)/launch/move_base.launch">
+  <include file="$(find turtlebot3_navbot_navigation)/launch/move_base_teb.launch">
     <arg name="model" value="$(arg model)" />
     <arg name="move_forward_only" value="$(arg move_forward_only)"/>
   </include>
@@ -52,9 +52,8 @@
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 
     <node pkg="rviz" type="rviz" name="rviz" required="true"
-          args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navigation.rviz"/>
+          args="-d $(find turtlebot3_navbot_navigation)/rviz/navbot_navigation.rviz"/>
   </group>
 
-  <node name='smach_view' pkg='smach_viewer' type='smach_viewer.py'/>
 
 </launch>
