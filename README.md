@@ -31,3 +31,5 @@ $ python start_experiment.py
 ```
 $ roslaunch nav_bot tb3_navigation.launch
 ```
+
+New change - work in progress
